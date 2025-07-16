@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
-const Navbar = ()=>{
 
-    const namee = "sathya"
+
+const Navbar = ({namee,age})=>{
+
+    
     return (
         <>
-            <h1 className="navbar" >{namee}</h1>
+            <h1 className="navbar" >{namee} , {age}</h1>
             <Logo/>
+            <button onClick={()=>setA(50)}>click</button>
             <img src="" alt=""/>
         </>
     )

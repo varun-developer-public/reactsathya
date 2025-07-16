@@ -1,0 +1,10 @@
+.productCard{
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+img{
+    height: 160px;
+}
