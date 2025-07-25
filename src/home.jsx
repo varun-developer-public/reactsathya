@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import ProductCard from './components/productCard/productCard'
-import RegistrationForms from './Forms/forms'
+import RegistrationForms from "./Forms/forms";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
 
 function Home() {
-  
-
   // const [products,setProducts] = useState([])
   // useEffect(()=>{
   //   fetch("https://dummyjson.com/products")
@@ -15,17 +15,12 @@ function Home() {
 
   return (
     <div>
-        <h1>Home Page</h1>
-        {/* {
-          products.map((items)=>{
-            return <ProductCard key={items.id} imglink={items.thumbnail} title={items.title} price={items.price}/>
-          })
-        } */}
-        <RegistrationForms/>
+      <Routes>
+        <Route index element={<RegistrationForms />} />
+        <Route path="/products" element={<ProductCard/>}/>
+      </Routes>
     </div>
-  )
+  );
 }
 
-
-
-export default Home
+export default Home;
