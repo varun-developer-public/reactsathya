@@ -88,21 +88,7 @@ function RegistrationForms() {
         {(formData.password.length < 3 || formData.password.length > 8) && (
           <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
         )}
-        {(formData.password.length < 3 || formData.password.length > 8) && (
-          <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
-        )}
-        {(formData.password.length < 3 || formData.password.length > 8) && (
-          <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
-        )}
-        {(formData.password.length < 3 || formData.password.length > 8) && (
-          <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
-        )}
-        {(formData.password.length < 3 || formData.password.length > 8) && (
-          <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
-        )}
-        {(formData.password.length < 3 || formData.password.length > 8) && (
-          <span style={{ fontSize: `${fontSize}px` }}>invalid password</span>
-        )}
+    
         <br /> <br />
         <label htmlFor="confirmPassword">Confirm Password:</label>
         <input

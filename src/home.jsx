@@ -3,6 +3,7 @@ import ProductCard from './components/productCard/productCard'
 import RegistrationForms from "./Forms/forms";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
+import App from "./app";
 
 function Home() {
   // const [products,setProducts] = useState([])
@@ -16,7 +17,7 @@ function Home() {
   return (
     <div>
       <Routes>
-        <Route index element={<RegistrationForms />} />
+        <Route index element={<App />} />
         <Route path="/products" element={<ProductCard/>}/>
       </Routes>
     </div>

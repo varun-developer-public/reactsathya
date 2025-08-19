@@ -8,9 +8,7 @@ createRoot(document.getElementById("root")).render(
   <>
     <Router>
       <Home />
-    </Router>
-
-    
+    </Router> 
   </>
 );
 
